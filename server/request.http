@@ -1,0 +1,111 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "nam",
+  "email": "nam@gmail.com",
+  "password": "123456"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "ducanh@gmail.com",
+  "password": "123456" 
+}
+
+###
+PUT http://localhost:5000/api/users/6136e800368d0ab40044c093
+Content-Type: application/json
+
+{
+  "desc": "Hi my name is Duc Anh!",
+  "userId": "6136e800368d0ab40044c093",
+  "password": "123456"
+}
+
+###
+DELETE  http://localhost:5000/api/users/612f951a976ff3bdb0ebe684
+Content-Type: application/json
+
+{
+  "userId": "612f951a976ff3bdb0ebe684"
+}
+
+### 
+GET http://localhost:5000/api/users?username=Nam
+
+### 
+PUT http://localhost:5000/api/users/6136fc325a1df9e6018afb27/follow
+Content-Type: application/json
+
+{
+  "userId": "6136eb995a1df9e6018afb24"
+}
+
+###
+PUT http://localhost:5000/api/users/6136fc325a1df9e6018afb27/unfollow
+Content-Type: application/json
+
+{
+  "userId": "6136eb995a1df9e6018afb24"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+
+{
+  "userId": "6136fc325a1df9e6018afb27",
+  "desc": "This is nam post 2",
+  "img": "4.jpeg"
+}
+
+###
+PUT http://localhost:5000/api/posts/613239f9d9218ed576c66c1c
+Content-Type: application/json
+
+{
+  "userId": "6132247e99ffedba3848c0cd",
+  "desc": "Updated post 2",
+  "img": "image.png"
+}
+
+###
+DELETE  http://localhost:5000/api/posts/6132431c5f0cf4887e5cb5b3
+Content-Type: application/json
+
+{
+  "userId": "6132247e99ffedba3848c0cd"
+}
+
+###
+PUT http://localhost:5000/api/posts/6132431c5f0cf4887e5cb5b3/like
+Content-Type: application/json
+
+{
+  "userId": "61321f3595281d81707faa47"
+}
+
+###
+PUT http://localhost:5000/api/posts/6132431c5f0cf4887e5cb5b3/like
+Content-Type: application/json
+
+{
+  "userId": "61321f3595281d81707faa47"
+}
+
+###
+GET http://localhost:5000/api/posts/6132431c5f0cf4887e5cb5b3
+
+### 
+GET http://localhost:5000/api/posts/timeline/61321f3595281d81707faa47
+
+###
+GET http://localhost:5000/api/posts/profile/ducanh
+
+###
+GET http://localhost:5000/api/users/friends/6136eb995a1df9e6018afb24
+

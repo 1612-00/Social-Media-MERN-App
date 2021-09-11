@@ -1,0 +1,38 @@
+.rightbar {
+  flex: 3.5;
+}
+
+.rightbarWrapper {
+  padding: 20px;
+}
+
+.rightbarFriendBirthday {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rightbarFriendBirthdayIcon {
+  width: 45px;
+  height: 45px;
+}
+
+.rightbarImageAd {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.rightbarOnlineFriend {
+  margin-top: 20px;
+}
+
+.rightbarOnlineFriendText {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.rightbarOnlineList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

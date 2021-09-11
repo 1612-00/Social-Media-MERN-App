@@ -1,0 +1,33 @@
+.rightbarOnlineItem {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+.rightbarOnlineItemContainer {
+  position: relative;
+}
+
+.rightbarOnlineItemImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rightbarOnline {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: limegreen;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  border: 2px solid white;
+}
+
+.rightbarOnlineItemUsername {
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 20px;
+}
